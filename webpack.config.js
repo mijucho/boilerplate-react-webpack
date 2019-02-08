@@ -3,15 +3,25 @@ const path = require('path')
 module.exports = {
   entry: './client/index.js',
   output: {
-    path: path.join(__dirname, 'server/public'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js'
   },
   mode: 'development',
   module: {
-    rules: [{
+    rules: [
+      {
       test: /\.jsx?$/,
       loader: 'babel-loader',
       exclude: /node_modules/
+    },
+    {
+      test: /\.sass$/,
+      include: path.appSrc,
+      loaders: ["style", "css", "sass"]
+    },
+    {
+      test: /\.css$/,
+      use: ['style-loader', 'css-loader']
     }]
   },
   resolve: {
