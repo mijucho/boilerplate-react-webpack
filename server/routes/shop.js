@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.use(express.json())
 
-router.get('/gallery', (req, res) => {
+router.get('/', (req, res) => {
     return db.displayCakes()
     .then ((cakes) => {
         console.log('any data?', cakes)
@@ -20,3 +20,5 @@ router.get('/gallery', (req, res) => {
 //       })
 
 //     }
+
+module.exports = router
