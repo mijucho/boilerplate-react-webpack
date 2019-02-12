@@ -1,32 +1,29 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'reactstrap';
+// import { Container, Row, Col } from 'reactstrap';
 
-class Gallery extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
+class Gallery extends React.Component {
+  constructor() {
+      super()
+      this.state={
+        cakes:[]
+      }
     }
+      
     render() { 
-        return ( 
-            <div>
-            <Row className='rowMargin'>
-          <Col xs="4"><img className='cakeImg' src="images/cake1.jpg" alt=""/></Col>
-          <Col xs="4"><img className='cakeImg' src="images/cake2.jpg" alt=""/></Col>
-          <Col xs="4"><img className='cakeImg' src="images/cake3.jpg" alt=""/></Col>
-        </Row>
-        <Row className='rowMargin'>
-          <Col xs="4"><img className='cakeImg' src="images/cake4.jpg" alt=""/></Col>
-          <Col xs="4"><img className='cakeImg' src="images/cake5.jpg" alt=""/></Col>
-          <Col xs="4"><img className='cakeImg' src="images/cake6.jpg" alt=""/></Col>
-        </Row>
-        <Row className='rowMargin'>
-          <Col xs="4"><img className='cakeImg' src="images/cake7.jpg" alt=""/></Col>
-          <Col xs="4"><img className='cakeImg' src="images/cake8.jpg" alt=""/></Col>
-          <Col xs="4"><img className='cakeImg' src="images/cake9.jpg" alt=""/></Col>
-        </Row>
-        </div>
-         );
+        return (
+          <div>
+            gallery
+          </div> 
+        //   <ul>
+        //   {this.state.shop.map((cake, i) =>
+        //     <li>
+        //       <img src={`images/${cake.img_url}`} alt=""/>
+        //     </li>
+        //   )}
+        //  </ul>
+
+         )
     }
 }
- 
-export default Gallery ;
+
+export default Gallery 
