@@ -13,21 +13,12 @@ class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      list:[]
+      
     }
-this.fectchCakeList = this.fetchCakeList.bind(this)
+
   }
 
-  fetchCakeList(){
-    return displayCake()
-    .then(cakes=> {
-      console.log('cakes.App.js',cakes)
-      this.setState({list:cakes})
-    })
-    .catch(err => {
-      this.setState({errorMessage: err.message})
-    })
-  }
+  
   render() {
     return (
       

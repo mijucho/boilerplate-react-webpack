@@ -1,6 +1,7 @@
 import request from 'superagent'
 
 export function displayCake () {
+    console.log('hit number 2')
     return request.get('/gallery')
     .then(res => {
         const cakes =res.body

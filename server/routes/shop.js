@@ -12,6 +12,8 @@ router.get('/', (req, res) => {
     })
     })
 
+    
+
 // router.get('/gallery/:id'), (req, res) => {
 //         const id =req.params.id
 //       return db.displayCake(id)
