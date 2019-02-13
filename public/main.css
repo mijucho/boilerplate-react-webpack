@@ -7,6 +7,11 @@
   overflow: hidden;
 }
 
+.header {
+  background-color: rgb(236, 207, 234);
+  color: fff;
+}
+
 #homebtn {
   position: absolute;
   top: 50%;
@@ -14,7 +19,7 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   /* background-color: #555; */
-  color: rgb(235, 27, 217);
+  color: rgb(231, 29, 218);
   font-size: 16px;
   padding: 12px 24px;
   border: none;
@@ -59,4 +64,10 @@ h4 {
 
 h5 {
   padding-left: 15px;
+}
+
+button {
+  position: relative;
+  top: 10px;
+  left: 20px;
 }

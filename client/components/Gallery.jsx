@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-// import { Container, Row, Col } from 'reactstrap';
-import { displayCake } from "../api/shop_api";
 import { Link } from "react-router-dom";
+import { displayCake } from "../api/shop_api";
 
 class Gallery extends React.Component {
   constructor(props) {

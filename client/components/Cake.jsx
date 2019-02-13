@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import { displayCake } from "../api/shop_api";
-
-import Form from "./Form";
-import { Container, Row, Col } from "reactstrap";
 import { Link } from "react-router-dom";
 
 class Cake extends React.Component {
@@ -45,6 +42,7 @@ class Cake extends React.Component {
             <h5>
               {this.state.cakes[this.props.match.params.cake].description}
             </h5>
+            <button>Add to Cart</button>
           </div>
         )}
       </div>
