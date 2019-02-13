@@ -9,7 +9,7 @@ const Home = () => {
            <img className="card-img" src="/images/cake8.png" alt="Card image"/>
           <div className="card-img-overlay">
              <div id="homebtn">
-               <h5 className="card-title">Eddo-Cake</h5>
+               <h5 className="card-title">Eedo-Cake</h5>
                <a className="btn btn-outline-light"  href="http://localhost:3000/#/gallery" role="button">Order Now</a>
             </div>
            </div>

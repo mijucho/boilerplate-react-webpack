@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Container, Row, Col } from 'reactstrap';
-import displayCake from '../api/shop_api'
+import {displayCake} from '../api/shop_api'
 
 class Gallery extends React.Component {
   constructor() {
@@ -8,41 +8,33 @@ class Gallery extends React.Component {
       this.state={
         cakes:[],
       
-        
-      }
-this.fectchCakeList = this.fetchCakeList.bind(this)
-      
+       }
+     this.fectchCakeList = this.fetchCakeList.bind(this)
     }
 
    componentDidMount () {
      this.fectchCakeList()
    }
 
-
-    fetchCakeList(){
-      console.log("hit")
-      return displayCake()
-      .then(cakes=> {
-        console.log('cakes.App.js',cakes)
-        this.setState({cakes:cakes})
-      })
-      .catch(err => {
-        this.setState({errorMessage: err.message})
-      })
+   fetchCakeList(){
+       displayCake()
+      .then(cakes=> this.setState({cakes:cakes}))
+      .catch(err => this.setState({errorMessage: err.message}))
     }
       
     render() { 
         return (
           <div>
-            gallery
-          </div> 
-        //   <ul>
-        //   {this.state.shop.map((cake, i) =>
-        //     <li>
-        //       <img src={`images/${cake.img_url}`} alt=""/>
-        //     </li>
-        //   )}
-        //  </ul>
+          <ul>
+          {this.state.cakes.map((cake, i) =>
+            <li>
+              <img src={`images/${cake.img_url}`} alt=""/>
+              <h3>{cake.name}</h3>
+              <h4>{cake.price}</h4>
+            </li>
+          )}
+         </ul>
+         </div> 
 
          )
     }

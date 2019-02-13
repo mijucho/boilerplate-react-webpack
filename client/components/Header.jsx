@@ -28,7 +28,7 @@ class Header extends Component {
         return (  
            <div>
             <Navbar color="secondary" light expand="md">
-              <NavbarBrand href="/">Eddo-Cake</NavbarBrand>
+              <NavbarBrand href="/">Eedo-Cake</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.toggle} navbar>
                 <Nav className="ml-auto" navbar>
@@ -36,7 +36,7 @@ class Header extends Component {
                     <NavLink href="http://localhost:3000/#/gallery">ORDER CAKE</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="https:">CONTACT</NavLink>
+                    <NavLink href="https://www.instagram.com/eedocake">CONTACT</NavLink>
                   </NavItem>
                 
                 </Nav>

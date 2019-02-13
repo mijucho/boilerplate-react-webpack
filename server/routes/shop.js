@@ -5,7 +5,7 @@ const router = express.Router()
 router.use(express.json())
 
 router.get('/', (req, res) => {
-    return db.displayCakes()
+     db.displayCakes()
     .then ((cakes) => {
         console.log('any data?', cakes)
       res.json(cakes)
