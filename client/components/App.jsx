@@ -32,7 +32,7 @@ class App extends Component {
           <Route exact path="/gallery" component={Gallery} />
          </div>
          <div >
-          <Route path="/gallery/cake" component={Cake} />
+          <Route path="/gallery/:cake" component={Cake} />
           </div>
        </div>
       </Router>

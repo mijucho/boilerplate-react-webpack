@@ -1,16 +1,14 @@
-
 .rowMargin {
-    margin-bottom: 30px;
-
+  margin-bottom: 30px;
 }
 .cakeImg {
-    max-width: 100%;
+  max-width: 100%;
 
-   overflow: hidden;
+  overflow: hidden;
 }
 
 #homebtn {
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -25,20 +23,35 @@
 }
 
 .ml-auto {
-padding: 5px;
+  padding: 5px;
 }
 
 .cakeGallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
- }
- 
- .cakeGallery img { 
-     max-width: 400px;
-     max-height:400px;
-     height:auto;
-     width: auto; 
-     margin: 10px;
-     background-color: #aaa;
- }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cakeGallery img {
+  max-width: 400px;
+  max-height: 400px;
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
+
+.cake {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cake img {
+  max-width: 500px;
+  max-height: 500px;
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
+h5 {
+  padding-left: 15px;
+}
