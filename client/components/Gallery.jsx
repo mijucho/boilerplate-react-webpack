@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 // import { Container, Row, Col } from 'reactstrap';
 import {displayCake} from '../api/shop_api'
+import {Link} from 'react-router-dom'
 
 class Gallery extends React.Component {
   constructor() {
       super()
       this.state={
         cakes:[],
-      
-       }
+      }
      this.fectchCakeList = this.fetchCakeList.bind(this)
     }
 
@@ -24,17 +24,19 @@ class Gallery extends React.Component {
       
     render() { 
         return (
-          <div>
-          <ul>
+        
+         <div className='cakeGallery'>
+        
           {this.state.cakes.map((cake, i) =>
-            <li>
-              <img src={`images/${cake.img_url}`} alt=""/>
-              <h3>{cake.name}</h3>
-              <h4>{cake.price}</h4>
-            </li>
+           <p>
+               <img src={`images/${cake.img_url}`} alt=""/>
+               <h4>{cake.name}  ${cake.price}</h4>
+         
+           </p>
           )}
-         </ul>
-         </div> 
+      
+        </div>
+  
 
          )
     }

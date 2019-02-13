@@ -34,7 +34,7 @@ class App extends Component {
          <div >
           <Route path="/gallery/cake" component={Cake} />
           </div>
-      </div>
+       </div>
       </Router>
 
       

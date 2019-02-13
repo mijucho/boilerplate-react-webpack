@@ -7,6 +7,6 @@ module.exports = {
 }
 
 function displayCakes (db = connection){
-    // const db =connection
+
     return db('shop').select()
 }

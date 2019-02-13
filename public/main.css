@@ -27,3 +27,18 @@
 .ml-auto {
 padding: 5px;
 }
+
+.cakeGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ 
+ .cakeGallery img { 
+     max-width: 400px;
+     max-height:400px;
+     height:auto;
+     width: auto; 
+     margin: 10px;
+     background-color: #aaa;
+ }
