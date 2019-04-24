@@ -1,11 +1,13 @@
-const knex = require('knex')
-const config = require('../../knexfile').development
-const connection = knex(config)
+const knex = require("knex");
+const config = require("../../knexfile").development;
+const connection = knex(config);
 
 module.exports = {
-    displayCakes
+  displayCakes
+};
+
+function displayCakes(db = connection) {
+  return db("shop").select();
 }
 
-function displayCakes (db = connection){
-  return db('shop').select()
-}
+

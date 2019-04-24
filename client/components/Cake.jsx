@@ -23,25 +23,19 @@ class Cake extends React.Component {
       .then(cakes => this.setState({ cakes: cakes }))
       .catch(err => this.setState({ errorMessage: err.message }));
   }
-
   render() {
+    const cake = this.state.cakes;
+    const list = this.props.match.params.cake;
+
     return (
       <div className="cake">
-        {this.state.cakes[this.props.match.params.cake] && (
+        {cake[list] && (
           <div>
-            <img
-              src={`images/${
-                this.state.cakes[this.props.match.params.cake].img_url
-              }`}
-              alt=""
-            />
+            <img src={`images/${cake[list].img_url}`} alt="" />
             <h4>
-              {this.state.cakes[this.props.match.params.cake].name} $
-              {this.state.cakes[this.props.match.params.cake].price}
+              {cake[list].name} ${cake[list].price}
             </h4>
-            <h5>
-              {this.state.cakes[this.props.match.params.cake].description}
-            </h5>
+            <h5>{cake[list].description}</h5>
             <button>Add to Cart</button>
           </div>
         )}
